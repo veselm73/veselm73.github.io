@@ -1,0 +1,13 @@
+# OS / editor junk
+Thumbs.db
+.DS_Store
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Unreferenced source photos kept locally only
+/DSC04235.jpg
+/DSC04241.jpg
+/PRG_AI_12-11-2025_preselection_credit adam & costey studio_022@2x.bfa797c7.jpg
+/winners2025.gif
