@@ -29,54 +29,81 @@
         <div class="projects-grid">
             <div class="project-card">
                 <h3>SDUEBA: Subgroup Discovery at Scale</h3>
-                <p>A scalable and interpretable pipeline for Subgroup Discovery using embedding techniques (Word2Vec, BERT), clustering algorithms, and decision-tree rule induction. Developed as a bachelor's thesis in collaboration with Workday Prague. Handles datasets with 50,000+ instances beyond the limits of conventional SD methods.</p>
+                <p>A scalable, interpretable pipeline for Subgroup Discovery using embeddings (Word2Vec, BERT), clustering, and decision-tree rule induction. It began as a bachelor's thesis with Workday Prague and was extended into a precompute/infer architecture that amortizes discovery across many views of a single table &mdash; per-tenant, per-cohort, and RBAC-filtered slices &mdash; answering each query in about a second on a 2M-row dashboard. Presented in the DS 2026 paper <em>Amortizing Subgroup Discovery</em> (under review).</p>
                 <div class="tags">
                     <span class="tag">Python</span>
                     <span class="tag">NLP</span>
                     <span class="tag">Embeddings</span>
                     <span class="tag">Clustering</span>
+                    <span class="tag">Subgroup Discovery</span>
                 </div>
-                <a href="https://github.com/veselm73/sdueba-subgroup-discovery" target="_blank" rel="noopener" class="project-link">
-                    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    View on GitHub
-                </a>
+                <div class="project-links">
+                    <a href="https://github.com/veselm73/sdueba-subgroup-discovery" target="_blank" rel="noopener" class="project-link">
+                        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                    <a href="assets/ds2026-amortizing-subgroup-discovery.pdf" target="_blank" rel="noopener" class="project-link">
+                        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                            <path d="M9.5 0H3a1 1 0 00-1 1v14a1 1 0 001 1h10a1 1 0 001-1V4.5L9.5 0zM9 5V1.5L13.5 5H9z"/>
+                        </svg>
+                        DS 2026 paper (PDF)
+                    </a>
+                </div>
             </div>
 
             <div class="project-card">
                 <h3>SUJBOT: Production RAG System</h3>
-                <p>Vision-Language RAG system for legal and technical documents. Features an autonomous agent with 9 specialized tools, a knowledge graph with Leiden community detection, compliance checking, and a React web UI with real-time progress visualization. Built for the State Office for Nuclear Safety (S&Uacute;JB).</p>
+                <p>Vision-Language RAG system for legal and technical documents, built for the State Office for Nuclear Safety (S&Uacute;JB). Features an autonomous agent with 9 specialized tools, a knowledge graph with Leiden community detection, compliance checking, and a React web UI with real-time progress visualization. This deployment motivated our retrieval-confidence research &mdash; predicting whether retrieval is sufficient before generation from the shape of the score distribution &mdash; published in the TSD 2026 paper <em>Your Retriever Already Knows</em>.</p>
                 <div class="tags">
                     <span class="tag">Python</span>
                     <span class="tag">RAG</span>
                     <span class="tag">Graph RAG</span>
                     <span class="tag">FastAPI</span>
                     <span class="tag">React</span>
+                    <span class="tag">QPP</span>
                 </div>
-                <a href="https://github.com/SUJBOT/SUJBOT" target="_blank" rel="noopener" class="project-link">
-                    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    View on GitHub
-                </a>
+                <div class="project-links">
+                    <a href="https://github.com/SUJBOT/SUJBOT" target="_blank" rel="noopener" class="project-link">
+                        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                    <a href="assets/tsd2026-retriever-qpp-manuscript.pdf" target="_blank" rel="noopener" class="project-link">
+                        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                            <path d="M9.5 0H3a1 1 0 00-1 1v14a1 1 0 001 1h10a1 1 0 001-1V4.5L9.5 0zM9 5V1.5L13.5 5H9z"/>
+                        </svg>
+                        TSD 2026 paper (PDF)
+                    </a>
+                </div>
             </div>
 
             <div class="project-card">
                 <h3>CCP Detection &amp; Tracking Pipeline</h3>
-                <p>Detection and tracking of Clathrin-Coated Pits in TIRF-SIM microscopy data using deep learning (HRNet, U-Net++) and particle tracking algorithms. Won the competition, beating the baseline accuracy of the &Uacute;TIA AV &#268;R research team. With Ruslan Guliev.</p>
+                <p>Detection and tracking of Clathrin-Coated Pits in TIRF-SIM microscopy data using deep learning (HRNet, U-Net++) and particle-tracking algorithms. Won the competition, beating the baseline accuracy of the &Uacute;TIA AV &#268;R research team (with Ruslan Guliev). I currently contribute to this &Uacute;TIA group by developing a synthetic data generator that produces labelled microscopy sequences for training the detection and tracking models.</p>
                 <div class="tags">
                     <span class="tag">Python</span>
                     <span class="tag">Computer Vision</span>
                     <span class="tag">Deep Learning</span>
                     <span class="tag">HRNet</span>
+                    <span class="tag">Synthetic Data</span>
                 </div>
-                <a href="https://github.com/Strojove-uceni/su2-final-projects-2025-veselyguliev" target="_blank" rel="noopener" class="project-link">
-                    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    View on GitHub
-                </a>
+                <div class="project-links">
+                    <a href="https://github.com/Strojove-uceni/su2-final-projects-2025-veselyguliev" target="_blank" rel="noopener" class="project-link">
+                        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                    <a href="https://shape2fate.utia.cas.cz/" target="_blank" rel="noopener" class="project-link">
+                        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+                            <path d="M9.5 0H3a1 1 0 00-1 1v14a1 1 0 001 1h10a1 1 0 001-1V4.5L9.5 0zM9 5V1.5L13.5 5H9z"/>
+                        </svg>
+                        Shape2Fate &mdash; group's latest publication
+                    </a>
+                </div>
             </div>
 
         </div>

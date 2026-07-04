@@ -416,6 +416,17 @@ main.container {
     margin-top: auto;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.1rem;
+    margin-top: auto;
+}
+
+.project-links .project-link {
+    margin-top: 0;
+}
+
 /* ===== Footer ===== */
 footer {
     border-top: 1px solid var(--border);
