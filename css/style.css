@@ -342,6 +342,28 @@ main.container {
     line-height: 1.6;
 }
 
+.timeline-badge {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background-color: rgba(139, 148, 158, 0.12);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.timeline-item.is-past .timeline-dot {
+    background-color: var(--border);
+}
+
+.timeline-item.is-past .timeline-content h3,
+.timeline-item.is-past .timeline-place {
+    opacity: 0.6;
+}
+
 /* Skills */
 .skills-group {
     margin-bottom: 1.25rem;
